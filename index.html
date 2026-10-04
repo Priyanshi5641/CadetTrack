@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CadetTrack</title>
+    <link rel="stylesheet" href= "style.css">
+  </head>
+  <body>
+    <header>
+      <h1>CadetTrack</h1>
+    <p>NCC Attendance Management System</p>
+    </header>
+    <main>
+      <section class="summary">
+        <div class="card">
+                <h2 id="total">0</h2>
+                <p>Total Cadets</p>
+            </div>
+
+        
+            <div class="card">
+                <h2 id="presentCount">0</h2>
+                <p>Present</p>
+            </div>
+
+            <div class="card">
+                <h2 id="absentCount">0</h2>
+                <p>Absent</p>
+            </div>
+        </section>
+
+        <button onclick="markAttendance()">Mark Attendance</button>
+    <label>Select Date :</label>
+      <input type="date" id="attendanceDate">
+      <button onclick="getDate()">Check date</button>
+      <p id="selectedDate"></p>
+      <h2> Cadet List</h2>
+      <div id="CadetList"></div>
+   <!--     <p id="status">Not marked</p>
+      <button onclick="Present()">Present</button>
+      <button onclick="Absent()">Absent</button> 
+  -->
+    </main>
+    
+<script src="script.js"></script>
+</body>
+
+</html>
